@@ -1,16 +1,66 @@
-# React + Vite
+BizDateUp Frontend Task
+This project is a solution for the BizDateUp Front-End Internship assignment. It is built with React, Vite, TailwindCSS, React Router DOM, Axios, and MockAPI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Responsive landing page implemented from the provided Figma design
 
-Currently, two official plugins are available:
+Talent hiring form with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Axios POST request to MockAPI /submissions
 
-## React Compiler
+Success message and form reset
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dashboard page:
 
-## Expanding the ESLint configuration
+Fetches all submissions from MockAPI (GET)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Displays data in responsive cards
+
+Edit tab:
+
+Shows list of submissions with Edit and Delete actions
+
+Edit opens a pre-filled form and updates data using PUT
+
+Delete removes the record using DELETE and updates UI instantly
+
+Clean component-based architecture:
+
+Reusable Input, Card, and Form components
+
+Separate Landing and Dashboard pages with React Router
+
+Tech Stack
+React + Vite
+
+TailwindCSS
+
+React Router DOM
+
+Axios
+
+MockAPI
+
+Getting Started
+Clone the repository
+
+git clone https://github.com/shubhamshrivastav1/bizdateup-frontend-task.git
+
+cd bizdateup-frontend-task
+
+Install dependencies
+
+npm install
+
+Run the development server
+
+npm run dev
+
+Open the shown localhost URL in your browser.
+
+MockAPI
+Resource: /submissions
+
+Methods used: GET, POST, PUT, DELETE
+
+Fields: fullName, phone, email, info, role, budget, hireCount, persona
