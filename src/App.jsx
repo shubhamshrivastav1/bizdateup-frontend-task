@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Dashboard from "./pages/Dashboard";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <>
       {/* Routes */}
       <Routes>
         <Route path="/" element={<Landing />} />
@@ -14,6 +14,6 @@ export default function App() {
 
       {/* Footer always at bottom */}
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
