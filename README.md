@@ -1,66 +1,103 @@
-BizDateUp Frontend Task
-This project is a solution for the BizDateUp Front-End Internship assignment. It is built with React, Vite, TailwindCSS, React Router DOM, Axios, and MockAPI.
+# 🚀 BizDateUp Frontend Task
 
-Features
-Responsive landing page implemented from the provided Figma design
+A complete frontend assignment built as part of the BizDateUp Internship Task.  
+This project demonstrates form handling, API integration (MockAPI), CRUD operations, reusable UI components and responsive design.
 
-Talent hiring form with:
+---
 
-Axios POST request to MockAPI /submissions
+## 🔗 Live Demo
 
-Success message and form reset
+| Page | Link |
+|------|------|
+| 🏠 Home | https://bizdateup-frontend-task.onrender.com/#/ |
+| 📊 Dashboard | https://bizdateup-frontend-task.onrender.com/#/dashboard |
 
-Dashboard page:
+---
 
-Fetches all submissions from MockAPI (GET)
+## ✨ Features
 
-Displays data in responsive cards
+- 🎨 UI built based on provided Figma Design  
+- 📩 Talent form connected to API using Axios  
+- 🧾 Data stored in MockAPI `/submissions`  
+- 📊 Dashboard to view all submissions  
+- ✏️ Edit (PUT) and ❌ Delete (DELETE) support  
+- 🔁 Reusable components and clean code structure  
+- 📱 Fully responsive layout  
 
-Edit tab:
+---
 
-Shows list of submissions with Edit and Delete actions
+## 🛠 Tech Stack
 
-Edit opens a pre-filled form and updates data using PUT
+| Technology | Purpose |
+|-----------|---------|
+| ⚛ React + Vite | UI development |
+| 🎨 TailwindCSS | Styling |
+| 🚦 React Router DOM | Routing |
+| 🔗 Axios | HTTP Requests |
+| 🧪 MockAPI | Backend |
 
-Delete removes the record using DELETE and updates UI instantly
+---
 
-Clean component-based architecture:
+## 📦 Installation
 
-Reusable Input, Card, and Form components
-
-Separate Landing and Dashboard pages with React Router
-
-Tech Stack
-React + Vite
-
-TailwindCSS
-
-React Router DOM
-
-Axios
-
-MockAPI
-
-Getting Started
-Clone the repository
-
+```bash
 git clone https://github.com/shubhamshrivastav1/bizdateup-frontend-task.git
-
 cd bizdateup-frontend-task
-
-Install dependencies
-
 npm install
-
-Run the development server
-
 npm run dev
 
-Open the shown localhost URL in your browser.
 
-MockAPI
+
+Open the URL shown in terminal (usually http://localhost:5173/).
+
+
+
+🧾 MockAPI Structure
+
 Resource: /submissions
 
-Methods used: GET, POST, PUT, DELETE
+| Field     | Example                                   |
+| --------- | ----------------------------------------- |
+| fullName  | "John Doe"                                |
+| email     | "[john@email.com](mailto:john@email.com)" |
+| phone     | "9876543210"                              |
+| role      | "Frontend Developer"                      |
+| hireCount | "3"                                       |
+| budget    | "10000-20000"                             |
+| persona   | "Hiring Manager"                          |
+| info      | "Looking for a talented developer"        |
 
-Fields: fullName, phone, email, info, role, budget, hireCount, persona
+
+Methods Used: GET, POST, PUT, DELETE
+
+
+📁 Folder Structure
+
+src/
+ ├── components/
+ │    ├── Navbar.jsx
+ │    ├── Card.jsx
+ │    ├── Input.jsx
+ │    └── Footer.jsx
+ ├── forms/
+ │    └── SubmissionForm.jsx
+ ├── pages/
+ │    ├── Landing.jsx
+ │    └── Dashboard.jsx
+ ├── App.jsx
+ └── main.jsx
+
+
+🤝 Contribution
+
+This project was created for an internship assignment.
+Suggestions and improvements are always welcome.
+
+
+📜 License
+
+This project is licensed under the MIT License.
+
+
+⭐ If you found this project useful, please give it a star!
+
